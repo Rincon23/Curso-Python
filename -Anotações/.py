@@ -208,4 +208,80 @@ Mundo,
 Tudo 
 Bem?
 
+#Aula 10
 
+#if else
+
+tempo = int(input('Quantos anos tem seu carro? '))
+
+if tempo <=3:
+    print('Carro novo')
+else:
+    print('Carro velho')
+print('---Fim---')
+
+nome = str(input('Qual é seu nome? '))
+if nome == 'Enzo':
+    print('Você está escrevendo o código')
+else:
+    print('Olá {}'.format(nome))
+
+n1 = float(input('Nota 1: '))
+n2 = float(input('Nota 2: '))
+m = (n1+n2)/2
+if m >= 6:
+    print('Aprovado!')
+else:
+    print('Reprovado!')
+
+#Simplificado
+
+tempo = int(input('Quantos anos tem seu carro? '))
+print('Carro novo' if tempo <= 3 else 'Carro velho')
+print('---Fim---')
+
+n1 = float(input('Nota 1: '))
+n2 = float(input('Nota 2: '))
+m = (n1+n2)/2
+print('Aprovado' if m >= 6 else 'Reprovado')
+
+#Aula 11
+
+#Cores no terminal
+
+#\033[ style ; text ; back m
+
+Style
+0 none
+1 bold (negrito)
+4 underline (sublinhar)
+7 negative
+
+text
+30 branco
+31 vermelho
+32 verde
+33 amarelo
+34 azul
+35 magenta
+36 ciano
+37 cinza
+
+back
+40 branco
+41 vermelho
+42 verde
+43 amarelo
+44 azul
+45 magenta
+46 ciano
+47 cinza
+
+nome = 'Enzo'
+cores = {'limpa':'\033[m',
+            'azul':'\033[34m', 
+            'amarelo':'\033[33m', 
+            'pretoebranco':'\033[7;30m'}
+print('Olá {}{}{}'.format('\033[34m',nome,'\033[m'))
+
+print('Olá {}{}{}'.format(cores['pretoebranco'],nome,cores['limpa']))
