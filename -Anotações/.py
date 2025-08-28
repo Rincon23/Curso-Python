@@ -286,7 +286,7 @@ print('Olá {}{}{}'.format('\033[34m',nome,'\033[m'))
 
 print('Olá {}{}{}'.format(cores['pretoebranco'],nome,cores['limpa']))
 
-#Aula 13
+#Aula 12
 
 #elif
 
@@ -299,3 +299,83 @@ elif nome in 'joâo pedro jose maria':
     print('Nome popular detectado!')
 else:
     print('Olá {}!'.format(nome))
+
+
+#Aula 13
+
+#for
+
+for i in range(0,3):
+    print('oi')
+print('fim')
+
+oi
+oi
+oi
+fim
+
+for i in range(0,5):
+    print(i)
+
+0
+1
+2
+3
+4
+
+for i in range(1,6):
+    print(i)
+
+1
+2
+3
+4
+5
+
+
+for i in range(0,11,2):
+    print(i)
+
+0
+2
+4
+6
+8
+10
+
+for i in range(5,0, -1):
+    print(i)
+
+5
+4
+3
+2
+1
+
+# For com variaveis
+i = int(input('Digite o início: '))
+f = int(input('Digite o fim: '))
+p = int(input('Digite o passo: '))
+
+for i in range(i,f,p):
+    print(i)
+
+# For com calculo
+n = 0
+for i in range(0,5):
+    n = int(input('Qual numero quer somar: ')) + n
+print('O resultado da soma é:',n)
+
+
+# Biblioteca time 
+import time
+
+print("Iniciando...")
+time.sleep(5)  # espera 5 segundos
+print("Agora o programa continuou!")
+
+from time import sleep
+
+for i in range(10,-1,-1):
+    print(i)
+    sleep(1)
